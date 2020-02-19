@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="calculator.ico">
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <br />
+            <h1 class="txtHeader">WEB CALCULATOR</h1>
+
+            <div class="inputDiv">
+                <input type="text" class="txtInput" id="txtInput" readonly>
+            </div>
+
+            <div class="mainDivBtn">
+                <table class="tableBtn">
+                    <tr>
+
+                        <td><input type="button" class="btn" value="7" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="8" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="9" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="/" onclick="addValue(this.value)" /></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="4" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="5" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="6" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="*" onclick="addValue(this.value)" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="1" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="2" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="3" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="-" onclick="addValue(this.value)" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="0" onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="." onclick="addValue(this.value)" /></td>
+                        <td><input type="button" class="btn" value="=" onclick="equals()" /></td>
+                        <td><input type="button" class="btn" value="+" onclick="addValue(this.value)" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="button" class="btn" value="DELETE"
+                                onclick="document.getElementById('txtInput').value=''" /></td>
+                    </tr>
+                </table>
+                <br />
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
